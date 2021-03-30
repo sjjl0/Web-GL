@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="lib/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="lib/three.js"></script>
+    <script type="text/javascript" src="lib/TrackballControls.js"></script>
+    <script type="text/javascript" src="lib/DDSLoader.js"></script>
+    <script type="text/javascript" src="lib/OBJLoader.js"></script>
+	<script type="text/javascript" src="lib/OBJMTLLoader.js"></script>
+	<script type="text/javascript" src="lib/OrbitControls.js"></script>
+	<script type="text/javascript" src="lib/MTLLoader.js"></script>
+	<title>计算机图形学</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+
+    <body>
+		<div class="tit">注意：本程序推荐发布网站后或使用旧版edge运行以达到最佳效果</div>
+        <div style="padding-left: 15px;">
+			<button id="left" class="button">操作说明</button>
+			<span id="right" class="tip">
+                <text style="padding-left: 3px;">Z——切换选中的模型</text>
+                <text style="padding-left: 3px;">WS/AD/QE——模型绕X/Y/Z轴旋转</text>
+                <text style="padding-left: 3px;">P——切换投影方式</text>
+                <text style="padding-left: 3px;">M/N——放大/减小视角</text>
+                <text style="padding-left: 3px;">←→/↑↓——沿XoZ面平移</text>
+                <text style="padding-left: 3px;">,.——沿Y轴平移</text>
+                <text style="padding-left: 3px;">JL/IK/UO——沿X/Y/Z轴缩放</text>
+                <text style="padding-left: 3px;">鼠标——视角操作</text>
+			</span>
+        </div>
+        <div style="padding-left: 15px;font-size: 14px;">
+            <span style="padding-left: 3.5px;">当前选中的模型是模型：</span>
+            <span id="modelnow" style="padding-left: 5px;font-size: 16px;"></span>
+        </div>
+		
+		<div id="WebGL-output"></div>
+		
+		<script type="text/javascript" src="js/do.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
